@@ -51,9 +51,35 @@
                 {
                     if (intento > numeroAleatorio)
                     {
-
+                        Console.WriteLine("MENOR");
+                    }
+                    else if (intento < numeroAleatorio) ;
+                    {
+                        Console.WriteLine("MAYOR");
+                    }
+                    else 
+                    {
+                        Console.WriteLine("HAS GANADO");
+                        haGanado = true;
                     }
                 }
+                else { Console.WriteLine("Por favor, ingrese un número válido.");
+                }
+
+                jugadorActual++;
+                if (jugadorActual > numJugadores)
+                    jugadorActual = 1;
+            }
+            Console.WriteLine(¿"Desea jugar de nuevo? (s/n)");
+            string respuesta = Console.ReadLine();
+            if (respuesta == "s") ;
+            {
+                Console.Clear();
+                Main(null);
+            }
+            else 
+            {
+                Console.WriteLine("Gracias por jugar");
             }
         }
     }
