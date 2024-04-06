@@ -36,7 +36,7 @@
 
             }
             Random random = new Random();
-            int numeroAleatorio = random.Next(rangFin, rangFin + 1);
+            int numeroAleatorio = random.Next(rangInicio, rangFin + 1);
 
             Console.WriteLine($"El número a adivinar esta entre {rangInicio} y {rangFin}.");
 
@@ -53,7 +53,7 @@
                     {
                         Console.WriteLine("MENOR");
                     }
-                    else if (intento < numeroAleatorio) ;
+                    else if (intento < numeroAleatorio)
                     {
                         Console.WriteLine("MAYOR");
                     }
@@ -70,9 +70,9 @@
                 if (jugadorActual > numJugadores)
                     jugadorActual = 1;
             }
-            Console.WriteLine(¿"Desea jugar de nuevo? (s/n)");
+            Console.WriteLine("¿Desea jugar de nuevo? (s/n)");
             string respuesta = Console.ReadLine();
-            if (respuesta == "s") ;
+            if (respuesta == "s")
             {
                 Console.Clear();
                 Main(null);
