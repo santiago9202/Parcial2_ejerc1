@@ -59,7 +59,7 @@
                     }
                     else 
                     {
-                        Console.WriteLine("HAS GANADO");
+                        Console.WriteLine("\n----!!!!!!!!!--HAS GANADO--!!!!!!!!!----\n");
                         haGanado = true;
                     }
                 }
@@ -70,7 +70,7 @@
                 if (jugadorActual > numJugadores)
                     jugadorActual = 1;
             }
-            Console.WriteLine("¿Desea jugar de nuevo? (s/n)");
+            Console.WriteLine("----------¿Desea jugar un nuevo tirito?--------(s/n)");
             string respuesta = Console.ReadLine();
             if (respuesta == "s")
             {
