@@ -4,7 +4,18 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Bienvenido al juego Adivina el número");
+
+            int numJugadores;
+
+            do
+            {
+                Console.WriteLine("Por favor, ingrese el numero de jugadores ( entre 2 y 4):");
+                int.TryParse(Console.ReadLine(), out numJugadores);
+
+             } while (numJugadores > 0);
+
+
         }
     }
 }
