@@ -36,7 +36,25 @@
 
             }
             Random random = new Random();
-            int numeroAleatorio = 
+            int numeroAleatorio = random.Next(rangFin, rangFin + 1);
+
+            Console.WriteLine($"El número a adivinar esta entre {rangInicio} y {rangFin}.");
+
+            int jugadorActual = 1;
+            bool haGanado = false;
+
+            while (!haGanado)
+            {
+                Console.WriteLine($"Turno del Jugador {jugadorActual}:");
+                int intento;
+                if (int.TryParse(Console.ReadLine(),out intento) )
+                {
+                    if (intento > numeroAleatorio)
+                    {
+
+                    }
+                }
+            }
         }
     }
 }
